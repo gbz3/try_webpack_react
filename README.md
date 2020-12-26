@@ -21,3 +21,10 @@ $ mkdir src
 $ vi src/index.tsx
 $ npx webpack --mode production
 ```
+
+3. `index.html` をビルド対象に追加
+
+```bash
+$ npm install -D html-webpack-plugin
+$ vi src/index.html
+```
