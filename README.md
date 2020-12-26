@@ -28,3 +28,10 @@ $ npx webpack --mode production
 $ npm install -D html-webpack-plugin
 $ vi src/index.html
 ```
+
+4. `*.css` をビルド対象に追加
+
+```bash
+$ npm install -D css-loader style-loader
+$ vi src/reset.css
+```
