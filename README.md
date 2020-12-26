@@ -35,3 +35,14 @@ $ vi src/index.html
 $ npm install -D css-loader style-loader
 $ vi src/reset.css
 ```
+
+5. 静的 asset をビルド対象に追加
+
+```bash
+$ npm install -D file-loader
+$ vi webpack.config.js
+$ wget https://placehold.jp/150x150.png -O src/150x150.png
+$ vi src/index.tsx
+$ vi import-file.d.ts
+$ npx webpack --mode production
+```
