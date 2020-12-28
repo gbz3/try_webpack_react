@@ -12,14 +12,13 @@ $ vi tsconfig.json
 2. webpack の設定
 
 ```bash
-$ npm install -D webpack webpack-cli
-$ npm install -D ts-loader
+$ npm install -D webpack webpack-cli ts-loader
 $ vi webpack.config.js
 $ npm install react react-dom
 $ npm install -D @types/react @types/react-dom
 $ mkdir src
 $ vi src/index.tsx
-$ npx webpack --mode production
+$ npx webpack --mode development
 ```
 
 3. `index.html` をビルド対象に追加
@@ -27,7 +26,10 @@ $ npx webpack --mode production
 ```bash
 $ npm install -D html-webpack-plugin
 $ vi src/index.html
+$ npx webpack --mode development
 ```
+
+URL: `file://wsl%24/Ubuntu-20.04/home/{ユーザ名}/{リポジトリルート}/try_webpack_react/dist/index.html`
 
 4. `*.css` をビルド対象に追加
 
@@ -44,5 +46,5 @@ $ vi webpack.config.js
 $ wget https://placehold.jp/150x150.png -O src/150x150.png
 $ vi src/index.tsx
 $ vi import-file.d.ts
-$ npx webpack --mode production
+$ npx webpack --mode development
 ```
